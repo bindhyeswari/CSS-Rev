@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conflicts</title>
+    <style>
+
+        div span { /* 0 0 0 2 */
+            background-color: green !important;
+        }
+
+        span { /* 0 0 0 1 */
+            background-color: red !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <span style="background-color: blue">
+            div > span
+        </span>
+    </div>
+
+    <ul>
+        <li>!important</li>
+        <li>Specificity</li>
+        <li>Cascade</li>
+    </ul>
+
+</body>
+</html>

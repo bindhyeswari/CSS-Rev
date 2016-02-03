@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to Transition</title>
+    <style>
+
+
+        /* height, width, padding, margin 1em = 100% of the current font size  */ /* 16px */
+        div.square {
+            height: 2em;
+            width: 2em;
+            background-color: red;
+            transition: all 500ms cubic-bezier(.66,.08,.86,.06) /*2s*/;
+
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+        }
+
+        input:checked + div.square {
+            top: 600px;
+        }
+
+        div.square:hover {
+            /*font-size: 2em; !* 1em = 100% of the parent's font size *!*/
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div class="square"> </div>
+
+</body>
+</html>

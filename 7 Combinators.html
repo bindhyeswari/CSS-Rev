@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+    <style>
+
+        div span { /* space --> Descendant selector */
+            background-color: red;
+            color: white;
+        }
+
+        div > span#myspan { /* Inline ID Class/Attr Element -  0 1 0 2 */
+            background-color: red;
+        }
+
+        div > span { /* 0 0 0 2 */ /* Child Selectors */
+            background-color: green;
+        }
+
+        div#mydiv > span { /* 0 1 0 2 */
+            background-color: blue;
+        }
+
+        div:hover + div {
+            background-color: red;
+            transition: background-color 500ms ease;
+        }
+        /* Adjacent Sibling Selector */
+
+
+        /* Group Selector */
+        li.this + li {
+            color: green;
+        }
+
+
+        div, p {
+            color: black;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <div id="mydiv">
+            <span id="myspan">
+                Hello WOrld from div > div > span
+            </span>
+        </div>
+    </div>
+
+    <div>
+        <p>
+            <span>
+                Hello World from div > span
+            </span>
+        </p>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li class="this">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+</body>
+</html>

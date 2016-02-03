@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floats</title>
+    <style>
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid red;
+        }
+
+        li.float-left {
+            height: 100px;
+            width: 100px;
+            background-color: #eee;
+
+            float: left;
+        }
+
+        h1 {
+            background-color: red;
+            clear: both;
+        }
+
+        li.dummy {
+            clear: left;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="float-left">1</li>
+        <li class="float-left">2</li>
+        <li class="float-left">3</li>
+        <li class="dummy"></li>
+    </ul>
+
+    <h1>Collapse Issue / Great Collapse</h1>
+
+</body>
+</html>

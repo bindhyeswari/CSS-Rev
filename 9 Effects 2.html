@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Effects 2 - CSS3</title>
+    <style>
+
+        input {
+            display: none;
+        }
+
+        input:checked + label {
+        }
+
+        label {
+            display: inline-block;
+        }
+
+        input:checked + label + div.square {
+            background-color: green;
+            margin: 100px;
+
+        }
+
+        div.square {
+            height: 100px;
+            width: 100px;
+            margin-left: 600px;
+            background-color: red;
+            transition: margin 500ms ease;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>Move an element by clicking on another element. <strong>DO NOT</strong> use javascript.</h3>
+
+    <input type="checkbox" id="inp1">
+    <label for="inp1">
+        Click Me To Move The Square
+    </label>
+    <div class="square">
+
+    </div>
+
+
+</body>
+</html>
